@@ -1,0 +1,30 @@
+ .test_container {
+    background-color: var(--add-red);
+    display: flex;
+    justify-content: space-between;
+    height: var(--head-hight);
+ }
+
+ .test_img,
+ .test_nav,
+ .test_enter {
+  justify-content:center;
+  align-items: center;
+  font-size: 8px;
+  height: 20px;
+  width: 40px;
+  background-color: #7CE3E1;
+ }
+
+ .test_enter {
+  width: 400px;
+ }
+
+.test_nav {
+  position: absolute;
+  margin-top: calc(var(--head-hight)/2);
+  width: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

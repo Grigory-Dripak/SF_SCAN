@@ -1,0 +1,356 @@
+.header {
+    position: fixed;
+    background-color: var(--base-white);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    height: var(--head-hight);
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.logo {
+    width: 141px;
+    height: 141px;
+    margin-top: -24px;
+}
+
+
+.header_links {
+    display:flex;
+    gap: 50px;
+    position: absolute;
+    margin-top: calc(var(--head-hight)/2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_links > a, 
+.get_auth > a {
+    text-decoration: none;
+    color: var(--base-black);
+}
+
+.get_auth > a {
+    opacity: 40%;
+}
+
+.header_links > a:hover, 
+.get_auth > a:hover {
+    text-decoration: underline;
+  }
+
+
+.user_data {
+    align-content: center;
+}
+
+.get_auth {
+    height: var(--head-hight);
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.header_rectangle{
+    width: 2px;
+    height: 26px;
+    opacity: 60%;
+    background-color: var(--dark-green);
+}
+
+.login_button {
+    background-color: var(--base-green);
+    border-radius: 5px;
+    padding: 4px 10px 5px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.login_button:active{
+    transform: scale(0.9);
+    background-color: var(--dark-green);
+    box-shadow: 0 2px 5px var(--dark-green);
+}
+
+
+.user_pannel {
+    width: 175px;
+    height: 63px;
+    background-color: var(--add-gray);
+    border-radius: 5px;
+    position: absolute;
+    margin-top: calc(var(--head-hight)/2);
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+/* .logo {
+    width: 141px;
+    height: 100%;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none; 
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 49px;
+}
+
+.nav_link, 
+.registration, 
+.in_btn {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    text-decoration: none;
+}
+
+.nav_link {
+    color: var(--base-black);
+}
+
+.nav_link:hover {
+    color: #000000b2;
+}
+
+.registration {
+    padding-right: 18px;
+    margin-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-right: 2px solid rgba(2, 148, 145, 0.6);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.registration:hover, .user_btn:hover {
+    color: #000;
+}
+
+.in_btn {
+    font-weight: 500;
+    background-color: #7CE3E1;
+    border-radius: 5px;
+    padding: 4px 10px 5px 12px;
+    cursor: pointer;
+    color: #000;
+}
+
+.in_btn:hover {
+    background-color: #a9e3e2;
+}
+
+.signed {
+    display: flex;
+}
+
+.rectangle {
+    width: 175px;
+    margin-right: 128px;
+    text-align: justify;
+    display: flex;
+    padding: 12px 8px 15px 10px;
+    background-color: rgba(217, 217, 217, 0.3);
+    border-radius: 5px;
+    position: relative
+}
+
+.rectangle_background {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 25%;
+    left: 45%;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.rectangle_text {
+    margin-top: 2px;
+    text-align: right;
+    margin-right: 9px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.4);
+}  
+
+.rectangle_text:first-child {
+    margin-bottom: 7px;
+}
+
+.rectangle_number,
+.rectangle_number_black {
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.rectangle_number:last-child {
+    margin-top: 2px;
+    color: #8AC540;
+}
+
+.user {
+    display: flex;
+    margin-top: 10px;
+    text-align: right;
+    justify-content: flex-end; 
+
+}
+
+.user_name {
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.user_left {
+    margin-right: 5px;
+}
+
+.out_btn {
+    background-color: transparent;
+    font-size: 10px;
+    color: rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.userpic {
+    height: 32px;
+    border-radius: 50%;
+}
+
+.stripes_logo {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hidden_menu {
+    display: none;
+    margin-left: -60xp;
+    width: 100%;
+    background-color: #029491;
+    top: 93px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.hidden_nav {
+    margin-top: 70px;
+    margin-bottom: 75px;
+}
+
+.hidden_item {
+    margin-bottom: 26px;
+}
+
+.hidden_link {
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+}
+
+.hidden_registration {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20.5px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    letter-spacing: 0.16px;
+}
+
+.hidden_btn {
+    margin-bottom: 77.5px;
+    padding: 15.8px 117px 12.1px 117px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    border-radius: 5px;
+    background: #7CE3E1;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .hidden_menu {
+        display: block;
+    }
+
+    .logo {
+        width: 111px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .rectangle {
+        margin-top: 5px;
+        margin-left: 31px;
+        margin-right: 31px;
+        padding: 5px 25px 5px 10px;
+        width: 132px;
+        display: block;
+    }
+
+    .rectangle_text {
+        text-align: left;
+        font-size: 8px;
+        margin-right: 0;
+    }
+
+    .rectangle_number,
+    .rectangle_number_black {
+        margin-top: 0;
+    }
+
+    .rectangle_number_black {
+        color: #000;
+    }
+
+    .rectangle_top {
+        margin-bottom: 7px;
+    }
+
+    .rectangle_loading {
+        width: 132px;
+        height: 75px;
+    }
+
+    .user {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        margin-left: -14px;
+        margin-right: -26px;
+    }
+
+    .header_container {
+        margin-left: 14px;
+        margin-right: 26px;
+    }
+} */

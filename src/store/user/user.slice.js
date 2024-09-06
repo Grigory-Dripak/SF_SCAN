@@ -1,13 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const initialState = {
-    isLoading: false,
-    error: null,
-    user: {},
+    isAuth: false,
+    // ava: '/defAva.svg',
 }
 
 export const userSlice = createSlice({
-    name: 'users',
+    name: 'user',
     initialState,
-    reducers: {}
-})
+    reducers: {
+        setUser(state, action) {
+            state.isAuth = action.payload.isAuth;
+        },
+        removeUser(state) {
+            state.isAuth = false;
+        },
+    },
+});
+
+export const {setUser, removeUser} = userSlice.actions;
+export default userSlice.reducer;

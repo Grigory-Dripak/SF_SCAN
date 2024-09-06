@@ -1,32 +1,28 @@
 .footer {
-    margin-left: -60px;
-    margin-right: -60px;
-    padding-left: 60px;
-    padding-right: 45px;
+    margin-top: auto;
     height: 137px;
-    background-color: #029491;
+    width: 100%;
+    background-color: var(--dark-green);
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content:space-between;
 }
 
 .logo {
-    margin-top: -2px;
-    margin-bottom: -2px;
+    margin: -2px 0 -2px 60px;
     width: 141px;
     height: 141px;
 }
 
 .footer_label {
-    margin-top: 25px;
+    margin: 25px 45px 0 0;
     text-align: right;
 }
 
 .footer_label_element {
     margin-bottom: 2px;
     display: block;
-    color: #fff;
+    color: var(--base-white);
     font-size: 14px;
     letter-spacing: 0.14px;
     text-decoration: none;
@@ -41,13 +37,13 @@
     margin-top: 19px;
     font-size: 12px;
     letter-spacing: 0.12px;
-    color: #fff;
+    color: var(--base-white);
     font-family: "Inter-Regular", Helvetica; 
 }
 
 
 /* адаптация */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .footer {
         margin-left: -14px;
         margin-right: -26px;
@@ -60,4 +56,4 @@
         width: 111px;
         height: 111px;
     }
-}
+}  */

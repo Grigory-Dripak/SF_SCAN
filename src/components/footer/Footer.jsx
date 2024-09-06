@@ -1,13 +1,11 @@
 import React from 'react'
 import styles from './Footer.module.css'
-import footerLogo from '../../img/Logo.svg'
-
 
 const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-        <img className={styles.logo} src={footerLogo} alt="Footer logo" />
+        <img className={styles.logo} src={ '/Logo.svg' } alt="Footer logo" />
         <div className={styles.footer_label}>
             <p className={styles.footer_label_element}>г. Москва, Цветной б-р, 40</p>
             <a href="tel:+7(495)771-21-11" className={styles.footer_label_element}>+7 495 771 21 11</a>

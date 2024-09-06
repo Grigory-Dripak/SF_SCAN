@@ -4,6 +4,7 @@ import Login from './login/Login'
 import Search from './searching/Search'
 import Search_results from './searching/Search_results'
 import Footer from './footer/Footer'
+import Header from './head/Head'
 
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
   return (
     <>
         <BrowserRouter>
-          <div>
-            {/* <Header /> */}
+            <Header/>
+            <main>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
@@ -20,8 +21,8 @@ function App() {
               <Route path="/results/" element={<Search_results />} />
               {/* <Route path="/swagger/" element={<SwaggerAPI />} /> */}
             </Routes>
+            </main>
             <Footer/>
-          </div>
         </BrowserRouter>
     </>
   )

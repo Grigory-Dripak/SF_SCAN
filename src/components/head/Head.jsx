@@ -30,7 +30,7 @@ export default function Header() {
         {user.isAuth ? 
         (<div className={styles.user_data}>
           <div className={styles.name}>Алексей А.</div>
-          <div className={styles.ava}></div>
+          <img className={styles.ava} src={ '/defAva.svg' } alt="userAva" />
           <a href="#" className={styles.quit} onClick={handleQuitClick}>Выйти</a>
         </div>) 
         : 

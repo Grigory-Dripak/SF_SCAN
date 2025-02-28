@@ -1,3 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+} 
+
+.request {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
+}
+
+.request > h1 {
+  font-family: var(--ferry);
+}
+
+.main_img {
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+}
+
+.request,
+.whyme,
+.img,
+.tarifs,
+.test {
+  padding-left: 60px;
+  height: auto;
+  width: auto;
+}
+
+.button_request[display="none"]{
+  display: none;
+}
+
+.button_request{
+  display:block;
+  font-size: 22px;
+  letter-spacing: var(--letter-spacing);
+  height: 60px;
+  width: 40%;
+  color: #fff;
+  border: none;
+  background: var(--add-blue);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button_request:hover {
+  transform: scale(1.03);
+  box-shadow: #596fff6c 3px 3px 0px 1px;
+}
+
+.button_request:active {
+  transform: scale(1);
+  box-shadow: none;
+}
+
+.whyme,
+.tarifs {
+  font-family: var(--ferry);
+}
+
+.img {
+  background-image: url('/Advert-image-primary.svg');
+  height: 575.52px;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
  .test_container {
     background-color: var(--add-red);
     display: flex;

@@ -1,23 +1,15 @@
 .form_p {
   display:flex;
-	width: 100%;
-	padding-top: 123px;
+	margin: 0 0 60px 60px;
+  padding-top: 55px;
 	max-width: 1440px;
-	flex-grow: 1;
-	justify-content: space-around;
-	margin: 65px auto 60px;
-  /* flex-direction:column;
-  align-items: center;
-  justify-content: space-between; */
-  /* margin-top: 65px; */
+	justify-content:flex-start;
+  gap:50px;
 }
 
 .info {
-  position: absolute;
-  width: 383px;
-  height: 104px;
-  left: 14px;
-  top: 124px;
+  position: relative;
+  width: 38%;
   font-family: var(--ferry);
   font-style: normal;
   font-weight: 900;

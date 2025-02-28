@@ -32,7 +32,7 @@
 
 
 body {
-  background-color: var(--add-orange);
+  background-color: var(--base-white);
   font-family: var(--inter);
   font-size: 14px;
   letter-spacing: 0.14px;
